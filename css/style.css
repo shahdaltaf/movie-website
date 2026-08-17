@@ -100,3 +100,109 @@ font-weight:bold ;
    
   box-shadow: 0,10px,30px,rgba(217,70,239,0.25);
 }
+/* ////////////////////about us//////////////////////////////////////// */
+.about{
+      background-color: #0c122a;
+    color: aliceblue;
+    margin: 0px auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+  
+    
+}
+/* .about  h2{
+    color: rgb(132, 15, 34);
+}
+.about  p{
+    color: rgb(94, 16, 29);
+}
+.iconic{
+    color: rgb(162, 87, 99);
+} */
+.about-img{
+  margin: auto 0px;
+}
+.about-img  img{
+    margin-left: 60px;
+    width: 95%;
+}
+.about-content{
+    margin: 150px 50px; 
+}
+.about-p{
+    padding: 20px 0px;
+}
+.about-icons{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px 0px;
+}
+.about-p-icon{
+    padding-left: 13px;
+}
+/* /////////////////////////////////////////////////////////////////////// */
+footer{
+     color: aliceblue;
+   
+}
+hr{
+    border: none;
+    height: 1px;
+     background-color: #545970;
+}
+.top{
+     background-color: #080c1d;
+    height: 300px;
+}
+.top-inner{
+    width: 85%;
+    height: 250px;
+    display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-evenly;
+   margin-left: 105px;
+   padding-top: 55px;
+}
+.top  h3{
+    padding-bottom: 7px;
+    
+}
+.pp{
+    padding-top: 15px;
+}
+.ppp{
+    padding-top: 10px;
+}
+.ico{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 15px;
+}
+.down{
+     background-color: #080c1d;
+   height: 120px;
+   padding-top: 30px;
+}
+.down  p{
+  
+    text-align: center;
+    
+}
+.footer-links{
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 15px;
+    
+}
+.footer-links  a{
+   border-radius: 10px;
+   background-color:#545970;
+   color: rgb(21, 14, 58);
+   margin: 0px 5px;
+}
+.footer-links  a:hover{
+    background-color: rgb(67, 64, 81);
+}
+/* ////////////////////about us//////////////////////////////////////// */
