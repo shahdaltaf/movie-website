@@ -3,6 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+.navlogo{
+color:#f5d7be ;
+font-size:40px ;
+font-weight:bold ;
+
+}
+.nav {
+    display: flex; /*بيخلي العناصر جنب بعض*/
+    justify-content: space-between; /*بيوزع العناصر  في اماكنهم*/
+    align-items: center; 
+    padding: 20px; /* لو شيلته المحتوي هيبقي لازق*/
+    background-color: transparent;
+    width: 100%; /*بيغطي عرض الشاشه كله*/
+    position: fixed; /*النااف بار لبفضل ثلبت ختي لو حركناه*/
+    top: 0;/*الناف بار يبدا من اول الصفخه*/
+    left: 0;
+    z-index: 1000;/*بيخلي الناف بار دايما ظاهر*/
+}
+
+.navlinks ul {
+    list-style: none; /*بيشيل اي نقط*/
+    display: flex;
+    gap: 20px;
+}
+.navlinks a {
+    text-decoration: none;
+    color: #d6d9e6;
+    font-size: 18px;
+    font-weight: bold;
+}
 .categories{
     background-color: #070b1a;
     color: aliceblue;
