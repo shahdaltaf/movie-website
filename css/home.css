@@ -1,5 +1,4 @@
 /* ================= GENERAL ================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -14,15 +13,11 @@ body {
     color: #FFFFFF;
     font-family: Arial, sans-serif;
 }
-
-
 /* ================= NAVBAR ================= */
-
 .navlogo{
 color:#ffffff ;
 font-size:40px ;
 font-weight:bold ;
-
 }
 .navlogo span{
     color: #e053b8;
@@ -39,7 +34,6 @@ font-weight:bold ;
     left: 0;
     z-index: 1000;/*بيخلي الناف بار دايما ظاهر*/
 }
-
 .navlinks ul {
     list-style: none; /*بيشيل اي نقط*/
     display: flex;
@@ -55,33 +49,21 @@ font-weight:bold ;
 .navlinks a:hover{
     color: #e053b8;
 }
-
-
 /* ================= HERO ================= */
-
 .hero {
-
     min-height: 720px;
-
     display: flex;
     align-items: center;
-
     padding: 100px 6% 80px;
-
     position: relative;
-
-    background-image:
-        linear-gradient(
+    background-image: linear-gradient(
             90deg,
             rgba(7, 11, 26, 0.95) 0%,
             rgba(7, 11, 26, 0.82) 35%,
             rgba(7, 11, 26, 0.35) 70%,
             rgba(7, 11, 26, 0.75) 100%
-        ),
-        url("../images/home-bg.jpg");
-
-    background-size: cover;
-
+        ), url("../images/home-bg.jpg");
+    background-size: cover; 
     background-position: center;
 
 }
@@ -284,44 +266,67 @@ font-weight:bold ;
 
 
 /* ================= FOOTER ================= */
-
-footer {
-
-    background-color: #10162B;
-
-    border-top: 1px solid #252B45;
-
+footer{
+     color: aliceblue;
+   
+}
+hr{
+    border: none;
+    height: 1px;
+     background-color: #545970;
+}
+.top{
+     background-color: #080c1d;
+    height: 300px;
+}
+.top-inner{
+    width: 85%;
+    height: 250px;
+    display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-evenly;
+   margin-left: 105px;
+   padding-top: 55px;
+}
+.top  h3{
+    padding-bottom: 7px;
+    
+}
+.pp{
+    padding-top: 15px;
+}
+.ppp{
+    padding-top: 10px;
+}
+.ico{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 15px;
+}
+.down{
+     background-color: #080c1d;
+   height: 120px;
+   padding-top: 30px;
+}
+.down  p{
+  
     text-align: center;
-
-    padding: 40px 20px;
+    
 }
-
-.footer-logo {
-
-    font-size: 22px;
-
-    font-weight: bold;
-
-    margin-bottom: 12px;
+.footer-links{
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 15px;
+    
 }
-
-.footer-logo span {
-
-    color: #D946EF;
+.footer-links  a{
+   border-radius: 10px;
+   background-color:#545970;
+   color: rgb(21, 14, 58);
+   margin: 0px 5px;
 }
-
-footer p {
-
-    color: #B8BED1;
-
-    font-size: 13px;
-
-    margin-bottom: 15px;
-}
-
-.copyright {
-
-    font-size: 11px;
+.footer-links  a:hover{
+    background-color: rgb(67, 64, 81);
 }
 
 
