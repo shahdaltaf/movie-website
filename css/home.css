@@ -62,7 +62,7 @@ font-weight:bold ;
             rgba(7, 11, 26, 0.82) 35%,
             rgba(7, 11, 26, 0.35) 70%,
             rgba(7, 11, 26, 0.75) 100%
-        ), url("../images/home-bg.jpg");
+        ), url("../home-images/home-bg.jpg");
     background-size: cover; 
     background-position: center;
 
