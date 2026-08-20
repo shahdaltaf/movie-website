@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 .navlogo{
-color:#f5d7be ;
+color:#ffffff ;
 font-size:40px ;
 font-weight:bold ;
 
+}
+.navlogo span{
+    color: #e053b8;
 }
 .nav {
     display: flex; /*بيخلي العناصر جنب بعض*/
@@ -16,7 +19,7 @@ font-weight:bold ;
     padding: 20px; /* لو شيلته المحتوي هيبقي لازق*/
     background-color: transparent;
     width: 100%; /*بيغطي عرض الشاشه كله*/
-    position: fixed; /*النااف بار لبفضل ثلبت ختي لو حركناه*/
+    position: absolute;
     top: 0;/*الناف بار يبدا من اول الصفخه*/
     left: 0;
     z-index: 1000;/*بيخلي الناف بار دايما ظاهر*/
@@ -32,6 +35,10 @@ font-weight:bold ;
     color: #d6d9e6;
     font-size: 18px;
     font-weight: bold;
+    transition: .3s;
+}
+.navlinks a:hover{
+    color: #e053b8;
 }
 .categories{
     background-color: #070b1a;
