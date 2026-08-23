@@ -296,9 +296,6 @@ function displayUsers() {
 }
 
 
-
-
-
 displayMovies();
 
 displayBookings();

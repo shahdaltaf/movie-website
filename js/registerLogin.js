@@ -68,6 +68,13 @@ if (loginForm) {
         let savedEmail = localStorage.getItem("email");
         let savedPassword = localStorage.getItem("password");
 
+        
+        // Admin Login
+if (email === "admin@movie.com" && password === "Admin12345") {
+    window.location.href = "admin.html";
+    return;
+}
+
         if (email === savedEmail && password === savedPassword) {
 
             localStorage.setItem("loggedIn", "true");
