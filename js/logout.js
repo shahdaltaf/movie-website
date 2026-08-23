@@ -3,9 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const logoutBtn = document.getElementById("logoutBtn");
 
     function updateLogoutButton() {
-        const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-        if (isLoggedIn === "true") {
+        const loggedIn = localStorage.getItem("loggedIn");
+
+        if (loggedIn === "true") {
             logoutBtn.style.display = "inline";
         } else {
             logoutBtn.style.display = "none";
@@ -13,11 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     logoutBtn.addEventListener("click", function (event) {
+
         event.preventDefault();
 
-        localStorage.removeItem("isLoggedIn");
-
-        updateLogoutButton();
+        localStorage.removeItem("loggedIn");
 
         window.location.href = "index.html";
     });
