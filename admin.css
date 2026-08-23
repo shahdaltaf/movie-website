@@ -12,8 +12,6 @@ body {
 }
 
 
-/* Sidebar */
-
 .sidebar {
     width: 230px;
     height: 100vh;
@@ -43,7 +41,7 @@ body {
 }
 
 
-/* Main */
+
 
 .main {
     margin-left: 230px;
@@ -56,7 +54,7 @@ body {
 }
 
 
-/* Sections */
+
 
 .section {
     display: none;
@@ -67,7 +65,7 @@ body {
 }
 
 
-/* Dashboard Cards */
+
 
 .cards {
     display: flex;
@@ -91,7 +89,7 @@ body {
 }
 
 
-/* Add Button */
+
 
 .add-btn {
     background-color: #c2185b;
@@ -104,7 +102,6 @@ body {
 }
 
 
-/* Form */
 
 .form-box {
     display: none;
@@ -131,7 +128,7 @@ body {
 }
 
 
-/* Table */
+
 
 table {
     width: 100%;
@@ -150,8 +147,6 @@ th {
     background-color: #1b2540;
 }
 
-
-/* Action Buttons */
 
 .edit-btn {
     background-color: #2980b9;
