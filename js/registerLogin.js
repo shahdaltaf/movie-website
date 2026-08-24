@@ -71,11 +71,18 @@ if (loginForm) {
         
         // Admin Login
 if (email === "admin@movie.com" && password === "Admin12345") {
-    window.location.href = "admin.html";
+
+    localStorage.setItem("loggedIn", "true");
+    localStorage.setItem("isAdmin", "true");
+
+    alert("Admin login successful!");
+
+    window.location.href = "home.html";
     return;
 }
 
-        if (email === savedEmail && password === savedPassword) {
+
+      if (email === savedEmail && password === savedPassword) {
 
             localStorage.setItem("loggedIn", "true");
 
@@ -91,5 +98,22 @@ if (email === "admin@movie.com" && password === "Admin12345") {
 
     });
 
-}
+} // نهاية if (loginForm)
 
+
+// Admin Dashboard
+window.onload = function () {
+
+    let adminLink = document.getElementById("adminLink");
+
+    if (adminLink) {
+
+        let isAdmin = localStorage.getItem("isAdmin");
+
+        if (isAdmin === "true") {
+            adminLink.style.display = "block";
+        }
+
+    }
+
+};
