@@ -202,19 +202,28 @@ font-weight:bold ;
 }
 
 
-/* ================= MOVIE CARDS ================= */
+/* ================= MOVIE SLIDER ================= */
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.movie-slider {
+    width: 100%;
+    overflow: hidden;
+}
 
 .movie-container {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(6, 1fr);
-
+    display: flex;
     gap: 18px;
+    transition: transform 0.5s ease;
 }
 
 .movie-card {
+    flex: 0 0 calc((100% - 54px) / 4);
 
     background-color: #10162B;
 
@@ -228,40 +237,71 @@ font-weight:bold ;
 }
 
 .movie-card:hover {
-
     transform: translateY(-8px);
-
     border-color: #D946EF;
 }
 
 .movie-card img {
-
     width: 100%;
-
     height: 280px;
-
     object-fit: cover;
-
     display: block;
 }
 
 .movie-info {
-
     padding: 14px;
 }
 
 .movie-info h3 {
-
     font-size: 14px;
-
     margin-bottom: 7px;
 }
 
 .movie-info p {
-
     color: #B8BED1;
-
     font-size: 11px;
+}
+
+
+/* Slider Buttons */
+
+.slider-btn {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: rgba(7, 11, 26, 0.85);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: #D946EF;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
 }
 
 
@@ -338,10 +378,13 @@ hr{
         gap: 15px;
     }
 
-    .movie-container {
-        grid-template-columns:
-            repeat(3, 1fr);
-    }
+    .movie-card {
+    flex: 0 0 calc((100% - 36px) / 3);
+}
+
+.movie-card img {
+    height: 280px;
+}
 
     .hero h1 {
         font-size: 48px;
@@ -372,12 +415,28 @@ hr{
         font-size: 40px;
     }
 
-    .movie-container {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
+    .movie-card {
+    flex: 0 0 calc((100% - 18px) / 2);
+}
+
+.movie-card img {
+    height: 240px;
+}
 
     .movie-card img {
         height: 240px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .movie-card {
+        flex: 0 0 100%;
+    }
+
+    .slider-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
     }
 }
