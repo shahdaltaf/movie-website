@@ -40,6 +40,9 @@ function saveMovie() {
 
     let movieId = document.getElementById("movieId").value;
 
+    let image = document.getElementById("movieImage").value;
+
+
 
     if (name === "" || category === "" || duration === "" || rating === "") {
 
@@ -61,7 +64,9 @@ function saveMovie() {
 
             duration: duration,
 
-            rating: rating
+            rating: rating,
+
+            image:image,
 
         };
 
