@@ -138,7 +138,7 @@ font-weight:bold ;
 .about-p-icon{
     padding-left: 13px;
 }
-/* /////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////footer////////////////////////////////// */
 footer{
      color: aliceblue;
 }
@@ -200,28 +200,20 @@ hr{
 .footer-links  a:hover{
     background-color: rgb(67, 64, 81);
 }
-/* ////////////////////about us//////////////////////////////////////// */
 
 
 /* login */
 
 .login-page {
-    background-color: #171526 !important;
-    min-height: 100vh;
+    background-color: #171526 ;
 }
-
-
-/* Login Card */
 
 .login-container {
     width: 400px;
-    margin: 80px auto;
+    margin: 100px auto;
     padding: 40px;
-
     background-color: #30234a;
     border-radius: 15px;
-
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .login-container h1 {
@@ -230,7 +222,7 @@ hr{
     margin-bottom: 10px;
 }
 
-.login-container > p {
+.login-container  p {
     text-align: center;
     color: #d8d2e5;
     margin-bottom: 25px;
@@ -246,22 +238,17 @@ hr{
     width: 100%;
     padding: 12px;
     margin-bottom: 18px;
-
     border: none;
     border-radius: 8px;
-    outline: none;
 }
 
 .login-container button {
     width: 100%;
     padding: 12px;
-
     border: none;
     border-radius: 8px;
-
     background-color: #7046a3;
     color: white;
-
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -290,18 +277,14 @@ hr{
 
 .register-page {
     background-color: #171526;
-    min-height: 100vh;
 }
 
 .register-container {
-    width: 400px;
-    margin: 50px auto;
-    padding: 35px 40px;
-
     background-color: #30234a;
+    width: 400px;
+    margin: 100px auto;
+    padding: 35px 40px;
     border-radius: 15px;
-
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .register-container h1 {
@@ -310,7 +293,7 @@ hr{
     margin-bottom: 10px;
 }
 
-.register-container > p {
+.register-container  p {
     text-align: center;
     color: #d8d2e5;
     margin-bottom: 20px;
@@ -326,22 +309,17 @@ hr{
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-
     border: none;
     border-radius: 8px;
-    outline: none;
 }
 
 .register-container button {
     width: 100%;
     padding: 12px;
-
     border: none;
     border-radius: 8px;
-
     background-color: #7046a3;
     color: white;
-
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
