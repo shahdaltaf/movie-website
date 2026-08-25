@@ -5,71 +5,47 @@
 }
 
 .contact-section {
-    min-height: 600px;
     padding: 70px 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 50px;
-
     background-color: #111022;
 }
-
-
-/* =========================
-   CONTACT INFORMATION
-========================= */
 
 .contact {
     width: 50%;
     padding: 40px;
     background-color: #292342;
     border-radius: 15px;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .contact h1 {
     color: #c58cff;
-    font-size: 30px;
-    margin-bottom: 15px;
 }
 
-.contact > p {
+.contact  p {
     color: #d8d3e5;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    margin: 10px;
 }
 
 .contact h2 {
     color: white;
-    font-size: 22px;
-    margin-bottom: 20px;
 }
 
 .contact-details p {
     color: #ddd8e8;
-    font-size: 16px;
     margin: 18px 0;
 }
-
-
-/* =========================
-   CONTACT FORM
-========================= */
 
 .link {
     width: 50%;
     padding: 40px;
     background-color: #292342;
     border-radius: 15px;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .link h1 {
     color: #c58cff;
-    font-size: 30px;
     margin-bottom: 30px;
 }
 
@@ -80,49 +56,29 @@
 }
 
 .link input {
-    width: 100%;
     padding: 15px;
-
     background-color: #17152b;
     color: white;
-
     border: 1px solid #3b3455;
     border-radius: 8px;
-
-    font-size: 15px;
-    outline: none;
 }
 
 .link input::placeholder {
     color: #aaa4b8;
 }
 
-.link input:focus {
-    border-color: #a65cff;
-}
-
-
-/* Message */
-
-.link input[type="text"]:last-of-type {
+.message{
     height: 120px;
 }
 
-
-/* Button */
-
 .link button {
     padding: 14px;
-
     background-color: #8d4de8;
     color: white;
-
     border: none;
     border-radius: 8px;
-
     font-size: 16px;
     font-weight: bold;
-
     cursor: pointer;
 }
 

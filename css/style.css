@@ -116,18 +116,7 @@ font-weight:bold ;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
-  
-    
 }
-/* .about  h2{
-    color: rgb(132, 15, 34);
-}
-.about  p{
-    color: rgb(94, 16, 29);
-}
-.iconic{
-    color: rgb(162, 87, 99);
-} */
 .about-img{
   margin: auto 0px;
 }
@@ -152,7 +141,6 @@ font-weight:bold ;
 /* /////////////////////////////////////////////////////////////////////// */
 footer{
      color: aliceblue;
-   
 }
 hr{
     border: none;
@@ -215,17 +203,7 @@ hr{
 /* ////////////////////about us//////////////////////////////////////// */
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* login */
-
-/* =========================
-   LOGIN PAGE
-========================= */
 
 .login-page {
     background-color: #171526 !important;
