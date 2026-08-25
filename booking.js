@@ -50,9 +50,6 @@ form.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
-
-    // Get form values
-
     const name =
         document.getElementById("name").value;
 
@@ -71,6 +68,37 @@ form.addEventListener("submit", function(event) {
     const time =
         document.getElementById("time").value;
 
+// Save booking in localStorage
+
+    let bookings =
+
+        JSON.parse(localStorage.getItem("bookings")) || [];
+
+    let newBooking = {
+
+        name: name,
+
+        email: email,
+
+        movie: movie,
+
+        date: date,
+
+        time: time,
+
+        tickets: tickets
+
+    };
+
+    bookings.push(newBooking);
+
+    localStorage.setItem(
+
+        "bookings",
+
+        JSON.stringify(bookings)
+
+    );
 
     // Show confirmation
 

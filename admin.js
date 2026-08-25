@@ -40,8 +40,10 @@ function saveMovie() {
 
     let movieId = document.getElementById("movieId").value;
 
-    let image = document.getElementById("movieImage").value;
-
+   let image = document.getElementById("movieImage").value;
+if (image !== "" && !image.startsWith("images/")) {
+    image = "images/" + image;
+}
 
 
     if (name === "" || category === "" || duration === "" || rating === "") {
@@ -283,8 +285,6 @@ function displayUsers() {
         table.innerHTML += `
 
             <tr>
-
-                <td>${user.name}</td>
 
                 <td>${user.email}</td>
 
