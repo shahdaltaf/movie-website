@@ -37,10 +37,31 @@ const todayDate =
 
 dateInput.min = todayDate;
 
+const ticketsInput =
 
-// ===============================
-// Booking Form
-// ===============================
+    document.getElementById("tickets");
+
+const totalPriceInput =
+
+    document.getElementById("totalPrice");
+
+const ticketPrice = 200;
+
+ticketsInput.addEventListener("input", function() {
+
+    const tickets =
+
+        Number(ticketsInput.value);
+
+    const totalPrice =
+
+        tickets * ticketPrice;
+
+    totalPriceInput.value =
+
+        totalPrice + " EGP";
+
+});
 
 const form =
     document.getElementById("bookingForm");
@@ -65,6 +86,9 @@ form.addEventListener("submit", function(event) {
     const tickets =
         document.getElementById("tickets").value;
 
+const ticketPrice = 200;
+const totalPrice = tickets * ticketPrice;
+
     const time =
         document.getElementById("time").value;
 
@@ -77,16 +101,13 @@ form.addEventListener("submit", function(event) {
     let newBooking = {
 
         name: name,
-
         email: email,
-
         movie: movie,
-
         date: date,
-
         time: time,
-
-        tickets: tickets
+        tickets: tickets,
+ticketPrice: ticketPrice,
+totalPrice: ticketPrice
 
     };
 
@@ -115,7 +136,10 @@ form.addEventListener("submit", function(event) {
         <strong>Email:</strong> ${email}<br>
         <strong>Date:</strong> ${date}<br>
         <strong>Tickets:</strong> ${tickets}<br>
+        <strong>Ticket Price:</strong> ${ticketPrice} EGP<br>
+<strong>Total Price:</strong> ${totalPrice} EGP<br>
         <strong>Showtime:</strong> ${time}
+
     `;
 
 

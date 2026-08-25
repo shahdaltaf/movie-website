@@ -5,31 +5,20 @@ let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
 
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
-
-
 function showSection(sectionId) {
 
     let sections = document.querySelectorAll(".section");
-
     sections.forEach(function(section) {
         section.style.display = "none";
     });
-
     document.getElementById(sectionId).style.display = "block";
-
 }
-
 
 function openMovieForm() {
-
     document.getElementById("movieForm").style.display = "block";
-
 }
 
-
-
 function saveMovie() {
-
     let name = document.getElementById("movieName").value;
 
     let category = document.getElementById("movieCategory").value;
@@ -53,58 +42,36 @@ if (image !== "" && !image.startsWith("images/")) {
         return;
     }
 
-
     if (movieId === "") {
-
         let newMovie = {
-
             id: Date.now(),
-
             name: name,
-
             category: category,
-
             duration: duration,
-
             rating: rating,
-
             image:image,
-
         };
-
         movies.push(newMovie);
-
     }
 
     else {
-
         let movie = movies.find(function(movie) {
-
             return movie.id == movieId;
-
         });
 
-
         movie.name = name;
-
         movie.category = category;
-
         movie.duration = duration;
-
         movie.rating = rating;
 
     }
 
-
     localStorage.setItem("movies", JSON.stringify(movies));
 
-
     clearForm();
-
     displayMovies();
 
 }
-
 
 function displayMovies() {
 
@@ -112,21 +79,15 @@ function displayMovies() {
 
     table.innerHTML = "";
 
-
     movies.forEach(function(movie) {
 
         table.innerHTML += `
 
             <tr>
-
                 <td>${movie.name}</td>
-
                 <td>${movie.category}</td>
-
                 <td>${movie.duration}</td>
-
                 <td>⭐ ${movie.rating}</td>
-
                 <td>
 
                     <button
@@ -140,32 +101,18 @@ function displayMovies() {
                         onclick="deleteMovie(${movie.id})">
                         Delete
                     </button>
-
                 </td>
-
             </tr>
-
         `;
-
     });
-
-
-    document.getElementById("movieCount").innerText = movies.length;
-
+    document.getElementById("movieCount").innerText = movies.length; /*number of movies*/
 }
-
-
-
-
 
 function editMovie(id) {
 
     let movie = movies.find(function(movie) {
-
         return movie.id === id;
-
     });
-
 
     document.getElementById("movieId").value = movie.id;
 
@@ -182,16 +129,11 @@ function editMovie(id) {
 
 }
 
-
-
-
-
 function deleteMovie(id) {
 
     let confirmDelete = confirm(
         "Are you sure you want to delete this movie?"
     );
-
 
     if (confirmDelete) {
 
@@ -201,23 +143,16 @@ function deleteMovie(id) {
 
         });
 
-
         localStorage.setItem(
             "movies",
             JSON.stringify(movies)
         );
-
-
         displayMovies();
-
     }
 
 }
 
-
-
-
-function clearForm() {
+function clearForm() { /*every input returns empty*/
 
     document.getElementById("movieId").value = "";
 
@@ -232,9 +167,6 @@ function clearForm() {
     document.getElementById("movieForm").style.display = "none";
 
 }
-
-
-
 
 function displayBookings() {
 
@@ -271,14 +203,11 @@ function displayBookings() {
 
 }
 
-
-
 function displayUsers() {
 
     let table = document.getElementById("userTable");
 
     table.innerHTML = "";
-
 
     users.forEach(function(user) {
 
@@ -293,16 +222,10 @@ function displayUsers() {
         `;
 
     });
-
-
     document.getElementById("userCount").innerText =
         users.length;
-
 }
 
-
 displayMovies();
-
 displayBookings();
-
 displayUsers();
