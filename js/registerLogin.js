@@ -36,8 +36,14 @@ if (!/^[A-Za-z0-9]{8,}$/.test(password)) {
             return;
         }
 
-        localStorage.setItem("email", email);
-        localStorage.setItem("password", password);
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+let newUser = {
+    email: email
+};
+users.push(newUser);
+localStorage.setItem("users", JSON.stringify(users));
+localStorage.setItem("email", email);
+localStorage.setItem("password", password);
 
         alert("Registration successful!");
 
@@ -46,6 +52,8 @@ if (!/^[A-Za-z0-9]{8,}$/.test(password)) {
 
 }
 
+
+// login
 
 // login
 
@@ -65,26 +73,26 @@ if (loginForm) {
             return;
         }
 
+        // Admin Login
+        if (email === "admin@movie.com" && password === "Admin12345") {
+
+            localStorage.setItem("loggedIn", "true");
+            localStorage.setItem("isAdmin", "true");
+
+            alert("Admin login successful!");
+
+            window.location.href = "home.html";
+            return;
+        }
+
+        // Regular User Login
         let savedEmail = localStorage.getItem("email");
         let savedPassword = localStorage.getItem("password");
 
-        
-        // Admin Login
-if (email === "admin@movie.com" && password === "Admin12345") {
-
-    localStorage.setItem("loggedIn", "true");
-    localStorage.setItem("isAdmin", "true");
-
-    alert("Admin login successful!");
-
-    window.location.href = "home.html";
-    return;
-}
-
-
-      if (email === savedEmail && password === savedPassword) {
+        if (email === savedEmail && password === savedPassword) {
 
             localStorage.setItem("loggedIn", "true");
+            localStorage.setItem("isAdmin", "false");
 
             alert("Login successful!");
 
@@ -98,7 +106,7 @@ if (email === "admin@movie.com" && password === "Admin12345") {
 
     });
 
-} // نهاية if (loginForm)
+}
 
 
 // Admin Dashboard
